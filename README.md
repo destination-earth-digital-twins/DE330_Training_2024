@@ -12,7 +12,7 @@ Will be opened in some way
 ## Prerequisities
 * Access to https://github.com/destination-earth-digital-twins//Deode-Prototype
 * Access to ECMWF HPC atos and member of the msdeode group and a virtual ecflow server
-* Access to LUMI and acces to the ecflow dev servert
+* Access to LUMI and access to the ecflow dev server
 * Bring your own laptop
 
 For information on how to get access read here (some link and info )
