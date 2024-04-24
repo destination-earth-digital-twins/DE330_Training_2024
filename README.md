@@ -7,7 +7,7 @@ Training aiming to educate the DE330 phase 2 staff in the usage of the Deode scr
 * Dates: 17-19 of June, 2024
 
 ## Registration
-Will be opened in some way
+Please register yourself in https://docs.google.com/spreadsheets/d/19LMnqfZ-yffDTwDsHqkN3eGenvvX1bUrEUe7gmJblZU/edit#gid=0. Note that number of seats are limited and that a registration doesn't necessarily guarantee an onsite paricipation. Not sure how to formulate this....
 
 ## Prerequisities
 * Access to https://github.com/destination-earth-digital-twins//Deode-Prototype
