@@ -11,14 +11,4 @@ More information can be found [here](https://github.com/destination-earth-digita
 ## Registration
 Space is limited. We can only accommodate a certain number of people for on-site participation. Please apply for a place [here](https://docs.google.com/spreadsheets/d/19LMnqfZ-yffDTwDsHqkN3eGenvvX1bUrEUe7gmJblZU/edit#gid=0). Priority will be given to new developers. Note that the lectures will be hybrid and everyone is welcome to follow online. 
 
-## Prerequisities
-* Access to https://github.com/destination-earth-digital-twins//Deode-Prototype
-* Access to ECMWF HPC atos and member of the msdeode group and a virtual ecflow server
-* Access to LUMI and access to the ecflow dev server
-* Bring your own laptop
-
-For information on how to get access read here (some link and info )
-
-## Practical information (to be filled by some local hero )
-### Travelling
-### Accomodation
+More information can be found [here](https://github.com/destination-earth-digital-twins/DE330_Training_2024/wiki)
