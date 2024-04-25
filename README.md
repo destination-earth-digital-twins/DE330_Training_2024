@@ -9,7 +9,7 @@ Training aiming to educate the DE330 phase 2 staff in the usage of the Deode scr
 More information can be found [here](https://github.com/destination-earth-digital-twins/DE330_Training_2024/wiki)
 
 ## Registration
-Please register yourself in [here](https://docs.google.com/spreadsheets/d/19LMnqfZ-yffDTwDsHqkN3eGenvvX1bUrEUe7gmJblZU/edit#gid=0). Note that number of seats are limited and that a registration doesn't necessarily guarantee an onsite paricipation. Not sure how to formulate this....
+Space is limited. We can only accommodate a certain number of people for on-site participation. Please apply for a place [here](https://docs.google.com/spreadsheets/d/19LMnqfZ-yffDTwDsHqkN3eGenvvX1bUrEUe7gmJblZU/edit#gid=0). Priority will be given to new developers. Note that the lectures will be hybrid and everyone is welcome to follow online. 
 
 ## Prerequisities
 * Access to https://github.com/destination-earth-digital-twins//Deode-Prototype
