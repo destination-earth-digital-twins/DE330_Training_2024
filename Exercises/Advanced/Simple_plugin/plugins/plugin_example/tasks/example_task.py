@@ -6,6 +6,8 @@ from deode.logs import logger
 from deode.tasks.base import Task
 from deode.tasks.batch import BatchJob
 
+from ..methods import ExampleMethod
+
 
 class ExampleTask(Task):
     """Create grib files."""
@@ -24,3 +26,4 @@ class ExampleTask(Task):
         """Execute the example."""
 
         logger.info("BASETIME:{}", self.basetime)
+        ExampleMethod().say_hello()
