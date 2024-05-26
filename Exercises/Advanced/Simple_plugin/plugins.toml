@@ -1,0 +1,7 @@
+[general]
+  case = "Plugin_example"
+[general.plugin_registry.plugins]
+  plugin_example = "/home/a000864/dev/DE330_Training_2024/Exercises/Advanced/Simple_plugin/plugins"
+
+[suite_control]
+  suite_definition = "ExampleSuiteDefinition"
