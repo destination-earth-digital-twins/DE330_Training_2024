@@ -1,15 +1,3 @@
 # Introducing a plugin
 
-```
-[general]
-  case = "Plugin_example"
-[general.plugin_registry.plugins]
-  plugin_example = "some_path/plugins"
-
-[suite_control]
-  suite_definition = "ExampleSuiteDefinition"
-```
-replace `some_path` with the location of this example.
-
- * Run as stand alone
- * Run as a ecflow job
+This exersice lets you create a plugin for deode. First read the documentation about [plugins](https://destination-earth-digital-twins.github.io/deode-prototype-docs/misc_section_in_doc_page.html#plug-ins). Your task is to introduce the plugin to your deode installation and run `exampletask1` as a stand alone task and `exampletask2` as an ecflow suite.
