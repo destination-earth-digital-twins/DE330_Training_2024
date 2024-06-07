@@ -49,18 +49,34 @@ class ExampleSuiteDefinition(SuiteDefinition):
         unix_group = self.platform.get_platform_value("unix_group")
         deodemakedirs(self.joboutdir, unixgroup=unix_group)
 
-        input_template = (
-            Path(__file__).parent.resolve() / "../templates/ecflow/default.py"
-        )
-        input_template = input_template.as_posix()
+        input_template = self.platform.substitute("@DEODE_HOME@/deode/templates/ecflow/default.py")
+        input_template = Path(input_template).as_posix()
 
+        task2_template = ( Path(__file__).parent.resolve() / "../templates/simple_template.bash")
+        task2_template = task2_template.as_posix()
 
-        EcflowSuiteTask(
-                "exampletask2",
+        task1 = EcflowSuiteTask(
+                "ExampleTask1",
                 self.suite,
                 config,
                 self.task_settings,
                 self.ecf_files,
                 input_template=input_template,
-                ecf_files_remotely=self.ecf_files_remotely,
+            )
+
+        subtasks = EcflowSuiteFamily(
+                        "Subtasks",
+                        self.suite,
+                        self.ecf_files,
+                        trigger=EcflowSuiteTriggers([EcflowSuiteTrigger(task1)]),
+                    )
+
+        EcflowSuiteTask(
+                "ExampleTask2",
+                subtasks,
+                config,
+                self.task_settings,
+                self.ecf_files,
+                variables= {"ARGS": "arg1=1" },
+                input_template=task2_template,
             )
