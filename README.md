@@ -12,3 +12,6 @@ Space is limited. We can only accommodate a certain number of people for on-site
 
 ## More information
 More information and details can be found [here](https://github.com/destination-earth-digital-twins/DE330_Training_2024/wiki)
+
+## Venue: more info
+The address of Meteo France in Toulouse is [42 Av. Gaspard Coriolis, 31100 Toulouse, France](https://maps.app.goo.gl/h5hASdq5yKmuCXQK8). Come to reception, with your passport, and you will be pointed towards the conference centre (where the training will take place). 
