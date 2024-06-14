@@ -8,17 +8,19 @@ Models available are:
 - EUNICECY46h1_HARMONIE_AROME_750_NOWFP_HRES 750m DEODE run coupled to IFS
 - EUNICECY46h1_HARMONIE_AROME_750_NOWFP_DT   750m DEODE run coupled to Global DT
 
-For the HR runs, only runs at 00 UTC are available for the start and the end days. This should be reflected in the config yml file (by_step="48h")
+For the HR runs, only runs at 00 UTC are available for the start and the end days. This should be reflected in the config_template.yml file (by_step="48h")
 
 2: Air Quality Central Europe Case. 20/01/2017 to 22/01/2017
 
 Models available are:
 
-AQ75 Alaro 750m run by SHMU
-DAQ2 Alaro 2km  run by SHMU
-harmonie-AQ_500_winter DEODE run
-arome_AQ_500_winter    DEODE run
-alaro_AQ_500_winter    DEODE run
+- AQ75 Alaro 750m run by SHMU
+- DAQ2 Alaro 2km  run by SHMU
+- harmonie_AQ_500_winter DEODE run
+- arome_AQ_500_winter    DEODE run
+- alaro_AQ_500_winter    DEODE run
+
+Again, only 00UTC runs are available so make sure you use (by_step="48h") in the config file
 
 Steps to follow:
 
