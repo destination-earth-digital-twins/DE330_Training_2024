@@ -6,7 +6,7 @@ deode start suite --config-file deode/data/config_files/config.toml
 ```
 or even the simpler
 ```
-deode start suite --config-file deode/data/config_files/config.toml
+deode start suite 
 ```
 why is that? Hint: try the command `deode show config -h`
 
