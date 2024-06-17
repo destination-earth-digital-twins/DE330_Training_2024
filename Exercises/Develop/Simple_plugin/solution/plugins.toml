@@ -1,5 +1,7 @@
+[general]
+  case = "plugin_example"
 [general.plugin_registry.plugins]
-  plugin_example = "/home/snh/deode/DE330_Training_2024/Exercises/Develop/Simple_plugin/"
+  plugin_example = "SOME_PATH/DE330_Training_2024/Exercises/Develop/Simple_plugin/"
 [suite_control]
   suite_definition = "ExampleSuiteDefinition"
 [submission]
@@ -8,7 +10,7 @@
 [submission.plugin_example_group]
   INTERPRETER = "/usr/bin/bash"
   SCHOST = "hpc"                             # Refers to the submission group in troika
-  tasks = ["ExampleTask2"]
+  tasks = ["Bashtask"]
   WRAPPER = ""
 
 [submission.plugin_example_group.BATCH]
@@ -19,8 +21,8 @@
   WALLTIME = "#SBATCH --time=00:05:00"
 
 [submission.plugin_example_group.ENV]
+  DEODE = "awesome"
 
 [submission.plugin_example_group.MODULES]
   ECFLOW = ["load", "ecflow"]
-  ECMWFTOOLBOX = ["load", "ecmwf-toolbox/2024.02.1.0"]
 

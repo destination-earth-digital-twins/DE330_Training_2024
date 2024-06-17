@@ -4,6 +4,6 @@ set -x
 
 ecflow_client --init=$$
 
-sleep 10
+echo "DEODE is $DEODE"
 
 ecflow_client --complete

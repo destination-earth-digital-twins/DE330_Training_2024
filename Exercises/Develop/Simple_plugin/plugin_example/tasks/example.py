@@ -1,15 +1,12 @@
 """SimplePluginExample."""
 
-from deode.datetime_utils import as_datetime
 from deode.logs import logger
 from deode.tasks.base import Task
-from deode.tasks.batch import BatchJob
 
 from ..methods import ExampleMethod
 
-
 class ExampleTask1(Task):
-    """Example task."""
+    """Example task 1."""
 
     def __init__(self, config):
         """Construct object.
@@ -19,28 +16,24 @@ class ExampleTask1(Task):
         """
         Task.__init__(self, config, __name__)
 
-        self.basetime = as_datetime(self.config["general.times.basetime"])
+        self.basetime = self.config["general.times.basetime"]
 
     def execute(self):
         """Execute the example."""
-
         logger.info("BASETIME:{}", self.basetime)
 
 class ExampleTask2(Task):
-    """Create grib files."""
+    """Example task 1."""
 
     def __init__(self, config):
-        """Construct create grib object.
+        """Construct the task object.
 
         Args:
             config (deode.ParsedConfig): Configuration
         """
         Task.__init__(self, config, __name__)
-
-        self.validtime = as_datetime(self.config["general.times.validtime"])
+        self.case = self.config.get("general.case")
 
     def execute(self):
         """Execute the example."""
-
-        logger.info("VALIDTIME:{}", self.validtime)
-        ExampleMethod().say_hello()
+        ExampleMethod().say_hello(self.case)
