@@ -8,7 +8,7 @@ from .batch import BatchJob
 
 
 class GribLs(Task):
-    """List a grib file task."""
+    """List a grib file."""
 
     def __init__(self, config):
         """Construct object.

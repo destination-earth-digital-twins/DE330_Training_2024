@@ -1,6 +1,6 @@
-#  One way for solution
+#  One solution
 
-The give file `gribls.py` suggests one way to implement the task. The way to test it on atos is to run it as a stand alone task
+The given file `gribls.py` suggests one way to implement the task. Copy the file to the `deode/tasks` directory and run it as a stand alone task.
 
 ```
 task="gribls"
