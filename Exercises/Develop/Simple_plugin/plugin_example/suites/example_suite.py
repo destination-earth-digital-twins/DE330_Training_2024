@@ -36,7 +36,7 @@ class ExampleSuiteDefinition(SuiteDefinition):
         unix_group = self.platform.get_platform_value("unix_group")
         deodemakedirs(self.joboutdir, unixgroup=unix_group)
 
-        python_template = self.platform.substitute("@DEODE_HOME@/deode/templates/ecflow/default.py")
+        python_template = self.platform.substitute("@DEODE_HOME@/templates/ecflow/default.py")
         bash_job = ( Path(__file__).parent.resolve() / "../strange_bash_job/task.bash" )
 
         cleaning = EcflowSuiteTask(
