@@ -39,6 +39,15 @@ class ExampleSuiteDefinition(SuiteDefinition):
         python_template = self.platform.substitute("@DEODE_HOME@/deode/templates/ecflow/default.py")
         bash_job = ( Path(__file__).parent.resolve() / "../strange_bash_job/task.bash" )
 
+        cleaning = EcflowSuiteTask(
+                "PreCleaning",
+                self.suite,
+                config,
+                self.task_settings,
+                self.ecf_files,
+                input_template=python_template,
+            )
+
         task1 = EcflowSuiteTask(
                 "ExampleTask1",
                 self.suite,
@@ -46,6 +55,7 @@ class ExampleSuiteDefinition(SuiteDefinition):
                 self.task_settings,
                 self.ecf_files,
                 input_template=python_template,
+                trigger=EcflowSuiteTriggers([EcflowSuiteTrigger(cleaning)])
             )
 
         trigger=EcflowSuiteTriggers([EcflowSuiteTrigger(task1)])
@@ -74,4 +84,14 @@ class ExampleSuiteDefinition(SuiteDefinition):
                 self.task_settings,
                 self.ecf_files,
                 input_template=bash_job,
+            )
+
+        EcflowSuiteTask(
+                "PostMortem",
+                self.suite,
+                config,
+                self.task_settings,
+                self.ecf_files,
+                input_template=bash_job,
+                trigger=EcflowSuiteTriggers([EcflowSuiteTrigger(subtasks)])
             )

@@ -1,28 +1,26 @@
 [general]
-  case = "plugin_example"
+  case = "plugin_example2"
 [general.plugin_registry.plugins]
-  plugin_example = "SOME_PATH/DE330_Training_2024/Exercises/Develop/Simple_plugin/"
+  plugin_example = "../DE330_Training_2024/Exercises/Develop/Simple_plugin"
 [suite_control]
   suite_definition = "ExampleSuiteDefinition"
-[submission]
-  submit_types = ["background_vm", "background_hpc", "parallel", "gnu", "serial", "plugin_example_group"]
 
-[submission.plugin_example_group]
+[submission.tasks.plugin_example_group]
   INTERPRETER = "/usr/bin/bash"
   SCHOST = "hpc"                             # Refers to the submission group in troika
   tasks = ["Bashtask"]
   WRAPPER = ""
 
-[submission.plugin_example_group.BATCH]
+[submission.types.plugin_example_group.BATCH]
   NAME = "#SBATCH --job-name=@TASK_NAME@"
   NODES = "#SBATCH --nodes=1"
   NTASKS = "#SBATCH --ntasks=1"
   QOS = "#SBATCH --qos=np"
   WALLTIME = "#SBATCH --time=00:05:00"
 
-[submission.plugin_example_group.ENV]
+[submission.types.plugin_example_group.ENV]
   DEODE = "awesome"
 
-[submission.plugin_example_group.MODULES]
+[submission.types.plugin_example_group.MODULES]
   ECFLOW = ["load", "ecflow"]
 
