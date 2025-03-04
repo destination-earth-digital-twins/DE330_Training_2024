@@ -5,7 +5,7 @@
 [suite_control]
   suite_definition = "ExampleSuiteDefinition"
 
-[submission.tasks.plugin_example_group]
+[submission.types.plugin_example_group]
   INTERPRETER = "/usr/bin/bash"
   SCHOST = "hpc"                             # Refers to the submission group in troika
   tasks = ["Bashtask"]

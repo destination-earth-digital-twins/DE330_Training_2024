@@ -92,6 +92,6 @@ class ExampleSuiteDefinition(SuiteDefinition):
                 config,
                 self.task_settings,
                 self.ecf_files,
-                input_template=bash_job,
+                input_template=python_template,
                 trigger=EcflowSuiteTriggers([EcflowSuiteTrigger(subtasks)])
             )
